@@ -58,8 +58,8 @@ to Cloudflare R2 from one build. Sibling repositories of the same model:
 `mercator-model-currents-repo` and `mercator-model-fields-repo`.
 
 **Which document gets what, and what "update docs" means across all
-seventeen repositories, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in all seventeen, held equal by the site's `check:docs`.
+twenty repositories, is the doctrine block at the top of `CLAUDE.md`** —
+the same text in all twenty, held equal by the site's `check:docs`.
 
 ## Structure
 
