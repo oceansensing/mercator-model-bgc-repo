@@ -1,0 +1,86 @@
+# What this repository publishes: Mercator Ocean's global biogeochemistry at
+# the surface, from Copernicus Marine's GLOBAL_ANALYSISFORECAST_BGC_001_028 —
+# published, not drawn on the website's map (the owner, 2026-09-27).
+#
+# - **Every `roots` entry here must be one the site's `test-schema.mjs
+#   --roots` publishes**, or the orchestrator exits 2 and stops the publish.
+# - **The paths are relative to the site checkout**, not to this workspace:
+#   `scripts/...`, never `site/scripts/...`.
+# - **One global grid per product at the model's own 0.25 degree, no tiles**:
+#   about 6 MB each, 41 MB for the seven (measured 2026-09-27). A tile tier is
+#   for a layer the map draws, and none does yet.
+#
+# **The budget, from one reading.** The daily axis runs about ten days past
+# today, so the frame for today always exists and a product stamped 00Z is at
+# most a day old plus the gap between runs; the service's daily update landed
+# at about 03:30 UTC on 2026-09-26. 30 hours is the physics siblings' figure
+# for the same shape. Re-measure after a week of scheduled runs.
+
+[contract]
+check = ["node", "scripts/test-schema.mjs"]
+roots = ["node", "scripts/test-schema.mjs", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+# **Named after the server, not the product**, as the physics repositories'
+# lane is: a lock, so two steps talking to Copernicus never run together.
+[steps.bgc]
+cmd = ["python3", "scripts/fetch-mercator-bgc.py", "--only=chl-mercator,ph-mercator,pco2-mercator,o2-mercator,talk-mercator,no3-mercator,po4-mercator"]
+lane = "copernicus"
+
+[products.chl-mercator]
+title = "Mercator Ocean surface chlorophyll-a"
+step = "bgc"
+roots = ["chl-mercator.json"]
+writes = ["chl-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=chl-mercator"]
+
+[products.ph-mercator]
+title = "Mercator Ocean surface pH (total scale)"
+step = "bgc"
+roots = ["ph-mercator.json"]
+writes = ["ph-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=ph-mercator"]
+
+[products.pco2-mercator]
+title = "Mercator Ocean surface pCO2"
+step = "bgc"
+roots = ["pco2-mercator.json"]
+writes = ["pco2-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=pco2-mercator"]
+
+[products.o2-mercator]
+title = "Mercator Ocean surface dissolved oxygen"
+step = "bgc"
+roots = ["o2-mercator.json"]
+writes = ["o2-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=o2-mercator"]
+
+[products.talk-mercator]
+title = "Mercator Ocean surface total alkalinity"
+step = "bgc"
+roots = ["talk-mercator.json"]
+writes = ["talk-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=talk-mercator"]
+
+[products.no3-mercator]
+title = "Mercator Ocean surface nitrate"
+step = "bgc"
+roots = ["no3-mercator.json"]
+writes = ["no3-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=no3-mercator"]
+
+[products.po4-mercator]
+title = "Mercator Ocean surface phosphate"
+step = "bgc"
+roots = ["po4-mercator.json"]
+writes = ["po4-mercator.json"]
+max_age_hours = 30
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=po4-mercator"]

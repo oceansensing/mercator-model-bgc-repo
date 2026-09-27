@@ -24,12 +24,37 @@ shape the Mercator fetcher's chunk guard accepts. Access is the sibling
 repositories' own: the `copernicusmarine` toolbox and the organization's
 Copernicus Marine credentials.
 
+## 2026-09-27 — built, and rehearsed end to end
+
+**The fetcher** is the site's `scripts/fetch-mercator-bgc.py`, a sibling of
+the physics fetcher that imports its tested helpers and holds its own
+0.25-degree grid, so nothing here can move a physics product. Measured on the
+first live run: each dataset opens in 4-12 s and a global surface frame reads
+in about 1.3 s; all seven products took 35 s.
+
+**The first live run refused two products, correctly and for the wrong
+reason.** Range bounds set from open-ocean intuition refused real model
+water at 4,871 mmol m-3 of alkalinity and 111 of nitrate — river mouths and
+enclosed seas. The bounds were widened, and the check that catches a unit
+fault became a band on each frame's MEDIAN, since alkalinity left in
+mol m-3 reads 2.3, inside any wide range. Medians on 2026-09-27: chl 0.20
+mg m-3, pH 8.036, pCO2 387 uatm, O2 257, alkalinity 2,349, nitrate 1.11,
+phosphate 0.43 mmol m-3.
+
+**Rehearsed through the orchestrator** in a throwaway copy of the site with
+the seven roots added to its contract: `7 published file(s) match the
+contract`, every fate `fresh`, `deploy=True`, a 39 MB tree, and
+`schedule: {crons: [], longestGapHours: null}` — the dispatch-only state.
+
 ## Open
 
-1. The fetcher, in the site's `scripts/`, and its self-test.
-2. `pipeline/products.toml`, declaring only roots the site's contract
-   publishes.
-3. The publish workflow, its schedule offset from the siblings', and each
-   product's `max_age_hours` measured from when the data really arrives.
-4. The secrets only the owner can add: `PIPELINES_SSH_KEY` and the three
+1. **Go live**, which waits on the owner's secrets: the roots join the
+   site's contract and this origin joins `MAP_ORIGINS` in one site commit,
+   then a dispatched run here, then the schedule uncommented.
+2. **A day's frame is not refreshed when the service re-runs it.** Today's
+   frame exists before the 03:30 UTC update (the axis runs ten days ahead),
+   and the probe compares `refTime` only, so a run before the update
+   publishes yesterday's forecast of today and later runs call it current.
+   Worth a model-run stamp if a reader ever needs the newest forecast.
+3. The secrets only the owner can add: `PIPELINES_SSH_KEY` and the three
    `R2_*` organization secrets, and the two Copernicus Marine credentials.
