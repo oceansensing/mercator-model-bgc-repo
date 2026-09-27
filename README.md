@@ -3,10 +3,11 @@
 The Mercator **biogeochemistry** — a data repository of the oceansensing ocean map system: its own
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
-**Nothing is published yet** (2026-09-27). `PLAN.md` is the founding plan;
+**Live since 2026-09-27** — published to Pages and R2, not drawn on the
+website's map. `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
-## What it will publish
+## What it publishes
 
 Seven **surface** fields from Copernicus Marine's global biogeochemistry
 analysis and forecast, `GLOBAL_ANALYSISFORECAST_BGC_001_028`: chlorophyll-a,
@@ -47,7 +48,7 @@ shape the Mercator fetcher's chunk guard accepts. Access is the sibling
 repositories' own: the `copernicusmarine` toolbox and the organization's
 Copernicus Marine credentials.
 
-## How it will run
+## How it runs
 
 The orchestrator (the site's private `pipeline/`), the fetchers and the
 published-file contract all come from `oceansensing.github.io`, checked out at
@@ -68,4 +69,6 @@ README.md       what this is
 CLAUDE.md       what must not be got wrong, and the shared doc doctrine
 PLAN.md         the founding plan and running record
 DECISIONS.md    dated one-way decisions, D1 onward
+pipeline/       products.toml, the declaration the orchestrator reads
+.github/        the publish workflow
 ```
