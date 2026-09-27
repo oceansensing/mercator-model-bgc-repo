@@ -118,7 +118,8 @@ fact from a guess that aged.
 
 - **`PLAN.md`** — the founding plan and running record.
 - **`DECISIONS.md`** — dated one-way decisions, D1 onward.
-- **`pipeline/products.toml`** — not written yet.
+- **`pipeline/products.toml`** — the products, the step and the budget.
+- **`.github/workflows/publish.yml`** — scheduled `37 4,10,16,22 * * *` since 2026-09-27.
 
 ## What must not be got wrong here
 

@@ -48,9 +48,7 @@ contract`, every fate `fresh`, `deploy=True`, a 39 MB tree, and
 
 ## Open
 
-1. **Go live**, which waits on the owner's secrets: the roots join the
-   site's contract and this origin joins `MAP_ORIGINS` in one site commit,
-   then a dispatched run here, then the schedule uncommented.
+1. **Went live 2026-09-27** — the entry below.
 2. **A day's frame is not refreshed when the service re-runs it.** Today's
    frame exists before the 03:30 UTC update (the axis runs ten days ahead),
    and the probe compares `refTime` only, so a run before the update
@@ -58,3 +56,15 @@ contract`, every fate `fresh`, `deploy=True`, a 39 MB tree, and
    Worth a model-run stamp if a reader ever needs the newest forecast.
 3. The secrets only the owner can add: `PIPELINES_SSH_KEY` and the three
    `R2_*` organization secrets, and the two Copernicus Marine credentials.
+
+## 2026-09-27 — live
+
+The owner added the secrets; the site's commit `d978a1b` put this
+repository's roots in the contract and its origin in `MAP_ORIGINS`; the
+dispatched run 36296048841 went green on its first try — build, Pages and R2 — and
+`status/status.json` read, at 2026-09-27T05:04:30Z: every product `fresh`
+(7 of 7), the nearest frame 5.08 h from the
+reader, `contract: 1`. Each root was fetched from Pages
+and served. The schedule, `37 4,10,16,22 * * *`, was then uncommented (longest gap
+6 h, so the watchdog's silence budget is 10 h); the
+first scheduled run is the next reading.

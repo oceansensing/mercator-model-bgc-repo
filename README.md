@@ -53,8 +53,7 @@ The orchestrator (the site's private `pipeline/`), the fetchers and the
 published-file contract all come from `oceansensing.github.io`, checked out at
 run time. This repository carries `pipeline/products.toml` and its publish
 workflow (`.github/workflows/publish.yml`), and nothing else executable.
-**The workflow is dispatch-only until its first dispatched run publishes**;
-its schedule, `37 4,10,16,22 * * *`, is written there commented out. Each run publishes to GitHub Pages and
+**Scheduled since 2026-09-27** (`37 4,10,16,22 * * *`), after its first dispatched run published. Each run publishes to GitHub Pages and
 to Cloudflare R2 from one build. Sibling repositories of the same model:
 `mercator-model-currents-repo` and `mercator-model-fields-repo`.
 
