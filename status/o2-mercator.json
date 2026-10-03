@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "o2-mercator",
+ "title": "Mercator Ocean surface dissolved oxygen",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-03T23:29:30Z",
+ "updated": "2026-10-03T04:49:36Z",
+ "hour": "2026-10-03T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-10-03T00:00:00Z"
+ ],
+ "files": {
+  "o2-mercator.json": {
+   "bytes": 5585771,
+   "sha256": "4f5f94fd823fd5ad5c3ce0d0700e7cd1a823c71141bbf47e9b81f5b3eee29af0"
+  }
+ }
+}
