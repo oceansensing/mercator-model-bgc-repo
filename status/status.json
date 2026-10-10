@@ -1,0 +1,158 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-10-10T22:45:04Z",
+ "mode": "full",
+ "run": {
+  "id": "38092514307",
+  "url": "https://github.com/oceansensing/mercator-model-bgc-repo/actions/runs/38092514307"
+ },
+ "schedule": {
+  "crons": [
+   "37 4,10,16,22 * * *"
+  ],
+  "longestGapHours": 6.0
+ },
+ "products": {
+  "chl-mercator": {
+   "title": "Mercator Ocean surface chlorophyll-a",
+   "roots": [
+    "chl-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "ph-mercator": {
+   "title": "Mercator Ocean surface pH (total scale)",
+   "roots": [
+    "ph-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "pco2-mercator": {
+   "title": "Mercator Ocean surface pCO2",
+   "roots": [
+    "pco2-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "o2-mercator": {
+   "title": "Mercator Ocean surface dissolved oxygen",
+   "roots": [
+    "o2-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "talk-mercator": {
+   "title": "Mercator Ocean surface total alkalinity",
+   "roots": [
+    "talk-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "no3-mercator": {
+   "title": "Mercator Ocean surface nitrate",
+   "roots": [
+    "no3-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  },
+  "po4-mercator": {
+   "title": "Mercator Ocean surface phosphate",
+   "roots": [
+    "po4-mercator.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-10-10T22:45:04Z",
+   "updated": "2026-10-10T04:50:48Z",
+   "hour": "2026-10-10T00:00:00Z",
+   "modelRun": null,
+   "source": "Mercator Ocean / Copernicus Marine",
+   "hours": [
+    "2026-10-10T00:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 22.75,
+   "nearestOffsetHours": 22.75
+  }
+ }
+}
