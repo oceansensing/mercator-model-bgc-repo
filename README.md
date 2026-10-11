@@ -35,6 +35,28 @@ at the first depth level (0.494 m). No tiles. Sizes measured 2026-09-27;
 the published tree is about 39 MB. The fetcher is the site's
 `scripts/fetch-mercator-bgc.py`.
 
+## Published to R2 alone (since 2026-10-10)
+
+Declared `r2_only` in `pipeline/products.toml`: the same run builds these,
+they are left out of this repository's Pages site and its status, and the R2
+job publishes them beside the rest (the site pipeline's D13, its note of
+2026-10-09). Their roots stay on the `published` branch, as every product's do.
+
+| roots | quantity | places | a day |
+| --- | --- | --- | --- |
+| `no3-mercator-<depth>m.json` | nitrate at each of the 49 levels with water, 0.494 to 5274.784 m — the physics' own depths, checked each run — one root a level named for its depth to the meter (`-0m` … `-5275m`) | 3 | 284 MB |
+| `po4-mercator-<depth>m.json` | phosphate at the same levels | 4 | 297 MB |
+| `si-mercator-<depth>m.json` | silicate at the same levels | 2 | 255 MB |
+| `o2-mercator-<depth>m.json` | dissolved oxygen at the same levels | 1 | 268 MB |
+
+Each root is a 1 degree overview (every fourth cell) pointing at its tiles
+at the model's own 0.25 degree in 20 degree boxes, an all-land box left out;
+mmol m-3, the daily mean for the day at or before now. One level is one read
+(one chunk), so the four take about two minutes (measured 2026-10-10, step
+`bgc-levels`). **The product's silicate stops at 150 mmol m-3**: in the deep
+North Pacific 18% of the cells at 2533 m read exactly 150.00 (measured
+2026-10-10's 10-11), where the ocean holds more.
+
 ## Where the data comes from
 
 **Source, read 2026-09-26/27** (`copernicusmarine describe`, toolbox 2.4.1,
