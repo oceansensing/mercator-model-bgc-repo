@@ -88,6 +88,33 @@ jobs:
           COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
           COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.COPERNICUSMARINE_SERVICE_PASSWORD }}
         run: python3 site/pipeline/orchestrate.py plan --mode full
+      # **The levels' tiles, one cache a quantity** (2026-10-10): keyed by the
+      # day `plan` names, restored before the run and saved after a build, so
+      # only a day's first run reads the levels for its tiles.
+      - name: Restore no3 levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-no3-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-no3-levels-tiles }}
+
+      - name: Restore po4 levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-po4-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-po4-levels-tiles }}
+
+      - name: Restore si levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-si-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-si-levels-tiles }}
+
+      - name: Restore o2 levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-o2-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-o2-levels-tiles }}
+
       - name: Fetch, validate, assemble
         id: run
         env:
@@ -95,6 +122,34 @@ jobs:
           COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
           COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.COPERNICUSMARINE_SERVICE_PASSWORD }}
         run: python3 site/pipeline/orchestrate.py run
+      - name: Save no3 levels tiles
+        if: steps.run.outputs.built-mercator-no3-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-no3-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-no3-levels-tiles }}
+
+      - name: Save po4 levels tiles
+        if: steps.run.outputs.built-mercator-po4-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-po4-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-po4-levels-tiles }}
+
+      - name: Save si levels tiles
+        if: steps.run.outputs.built-mercator-si-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-si-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-si-levels-tiles }}
+
+      - name: Save o2 levels tiles
+        if: steps.run.outputs.built-mercator-o2-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-o2-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-o2-levels-tiles }}
+
       - name: Upload the site
         if: steps.run.outputs.deploy == 'true'
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
