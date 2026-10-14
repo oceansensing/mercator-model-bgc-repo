@@ -3,7 +3,8 @@
 The Mercator **biogeochemistry**. Created on GitHub by the owner and given its documents on
 2026-09-27, the day the owner asked for ECCOFS, CBEFS, Mercator's
 biogeochemistry, RTOFS and GFS to be published without the map drawing them.
-**Nothing is published yet.**
+**Live since 2026-09-27** (the README); what follows is the founding plan
+and the dated record.
 
 ## What it is for
 
