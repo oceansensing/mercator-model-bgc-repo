@@ -214,7 +214,13 @@ jobs:
     needs: build
     if: needs.build.outputs.deploy == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # Raised from 15 on 2026-10-14: a publish that carries the tiles again
+    # after one that carried none (a held run with no cache, 2026-10-13
+    # 22:42 UTC, when 29,680 tiles left R2) uploads about 30,000 files, and
+    # two such uploads were cut off at 15 minutes, R2 behind Pages for
+    # twelve hours. At the fields' measured pace (15,256 files in 26 minutes)
+    # that is about 51; only what changed is uploaded, so other runs stay short.
+    timeout-minutes: 60
     permissions:
       contents: read
     steps:
