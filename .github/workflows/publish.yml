@@ -96,24 +96,28 @@ jobs:
         with:
           path: ${{ steps.plan.outputs.cache-paths-mercator-no3-levels-tiles }}
           key: ${{ steps.plan.outputs.cache-key-mercator-no3-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-no3-levels-tiles }}
 
       - name: Restore po4 levels tiles
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: ${{ steps.plan.outputs.cache-paths-mercator-po4-levels-tiles }}
           key: ${{ steps.plan.outputs.cache-key-mercator-po4-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-po4-levels-tiles }}
 
       - name: Restore si levels tiles
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: ${{ steps.plan.outputs.cache-paths-mercator-si-levels-tiles }}
           key: ${{ steps.plan.outputs.cache-key-mercator-si-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-si-levels-tiles }}
 
       - name: Restore o2 levels tiles
         uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
         with:
           path: ${{ steps.plan.outputs.cache-paths-mercator-o2-levels-tiles }}
           key: ${{ steps.plan.outputs.cache-key-mercator-o2-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-o2-levels-tiles }}
 
       - name: Fetch, validate, assemble
         id: run
