@@ -48,12 +48,16 @@ job publishes them beside the rest (the site pipeline's D13, its note of
 | `po4-mercator-<depth>m.json` | phosphate at the same levels | 4 | 297 MB |
 | `si-mercator-<depth>m.json` | silicate at the same levels | 2 | 255 MB |
 | `o2-mercator-<depth>m.json` | dissolved oxygen at the same levels | 1 | 268 MB |
+| `chl-mercator-<depth>m.json` | chlorophyll-a at the same levels, mg m-3 (since 2026-10-16) | 4 | 298 MB |
+| `ph-mercator-<depth>m.json` | pH (total scale) at the same levels (since 2026-10-16) | 3 | 267 MB |
+| `talk-mercator-<depth>m.json` | total alkalinity at the same levels (since 2026-10-16) | 1 | 301 MB |
 
 Each root is a 1 degree overview (every fourth cell) pointing at its tiles
 at the model's own 0.25 degree in 20 degree boxes, an all-land box left out;
-mmol m-3, the daily mean for the day at or before now. One level is one read
-(one chunk), so the four take about two minutes (measured 2026-10-10, step
-`bgc-levels`). **The product's silicate stops at 150 mmol m-3**: in the deep
+mmol m-3 but chlorophyll's mg m-3 and pH's none, the daily mean for the day
+at or before now. One level is one read (one chunk), so the four took about
+two minutes (measured 2026-10-10, step `bgc-levels`); the three of 2026-10-16
+about 27 s each (measured that day, off the runners). **The product's silicate stops at 150 mmol m-3**: in the deep
 North Pacific 18% of the cells at 2533 m read exactly 150.00 (measured
 2026-10-10's 10-11), where the ocean holds more.
 

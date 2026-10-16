@@ -8,7 +8,8 @@
 #   `scripts/...`, never `site/scripts/...`.
 # - **The surface's seven: one global grid per product at the model's own
 #   0.25 degree, no tiles**: about 6 MB each, 41 MB for the seven (measured
-#   2026-09-27). The four at every level (2026-10-10, below) carry tiles,
+#   2026-09-27). The seven at every level (four since 2026-10-10, three more
+#   since 2026-10-16, below) carry tiles,
 #   since a reader of one place needs only that place's water.
 #
 # **The budget, from one reading.** The daily axis runs about ten days past
@@ -31,12 +32,12 @@ cmd = ["python3", "scripts/fetch-mercator-bgc.py", "--only=chl-mercator,ph-merca
 lane = "copernicus"
 
 # **Nitrate, phosphate, silicate and oxygen at every level with water**
-# (2026-10-10): the physics' 49 kept depths, 0.494 to 5274.784 m, one read a
+# (2026-10-10), **and chlorophyll-a, pH and alkalinity** (2026-10-16): the physics' 49 kept depths, 0.494 to 5274.784 m, one read a
 # level, written as a 1 degree overview pointing at its tiles at the model's
 # own 0.25 degree in 20 degree boxes. Its own step on the same lane, so the
 # surface's seven never wait on it.
 [steps.bgc-levels]
-cmd = ["python3", "scripts/fetch-mercator-bgc.py", "--only=no3-mercator-levels,po4-mercator-levels,si-mercator-levels,o2-mercator-levels"]
+cmd = ["python3", "scripts/fetch-mercator-bgc.py", "--only=no3-mercator-levels,po4-mercator-levels,si-mercator-levels,o2-mercator-levels,chl-mercator-levels,ph-mercator-levels,talk-mercator-levels"]
 lane = "copernicus"
 timeout_minutes = 30
 
@@ -213,4 +214,91 @@ key = ["python3", "scripts/fetch-mercator-bgc.py", "--tile-key", "--only=o2-merc
 cache = "mercator-o2-levels-tiles"
 match = [
   ["tiles-o2-mercator-*m", "o2-mercator-*m.json"],
+]
+
+[products.chl-mercator-levels]
+title = "Mercator Ocean chlorophyll-a at each level, daily means"
+step = "bgc-levels"
+roots = ["chl-mercator-0m.json", "chl-mercator-2m.json", "chl-mercator-3m.json", "chl-mercator-4m.json",
+         "chl-mercator-5m.json", "chl-mercator-6m.json", "chl-mercator-8m.json", "chl-mercator-10m.json",
+         "chl-mercator-11m.json", "chl-mercator-13m.json", "chl-mercator-16m.json", "chl-mercator-18m.json",
+         "chl-mercator-22m.json", "chl-mercator-25m.json", "chl-mercator-29m.json", "chl-mercator-34m.json",
+         "chl-mercator-40m.json", "chl-mercator-47m.json", "chl-mercator-56m.json", "chl-mercator-66m.json",
+         "chl-mercator-78m.json", "chl-mercator-92m.json", "chl-mercator-110m.json", "chl-mercator-131m.json",
+         "chl-mercator-156m.json", "chl-mercator-186m.json", "chl-mercator-222m.json", "chl-mercator-266m.json",
+         "chl-mercator-318m.json", "chl-mercator-380m.json", "chl-mercator-454m.json", "chl-mercator-541m.json",
+         "chl-mercator-644m.json", "chl-mercator-763m.json", "chl-mercator-902m.json", "chl-mercator-1062m.json",
+         "chl-mercator-1245m.json", "chl-mercator-1452m.json", "chl-mercator-1684m.json", "chl-mercator-1942m.json",
+         "chl-mercator-2225m.json", "chl-mercator-2533m.json", "chl-mercator-2866m.json", "chl-mercator-3221m.json",
+         "chl-mercator-3597m.json", "chl-mercator-3992m.json", "chl-mercator-4405m.json", "chl-mercator-4833m.json",
+         "chl-mercator-5275m.json"]
+writes = ["chl-mercator-*m.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=chl-mercator-levels"]
+
+[products.chl-mercator-levels.tiles]
+build = ["python3", "scripts/fetch-mercator-bgc.py", "--tiles", "--only=chl-mercator-levels"]
+key = ["python3", "scripts/fetch-mercator-bgc.py", "--tile-key", "--only=chl-mercator-levels"]
+cache = "mercator-chl-levels-tiles"
+match = [
+  ["tiles-chl-mercator-*m", "chl-mercator-*m.json"],
+]
+
+[products.ph-mercator-levels]
+title = "Mercator Ocean pH (total scale) at each level, daily means"
+step = "bgc-levels"
+roots = ["ph-mercator-0m.json", "ph-mercator-2m.json", "ph-mercator-3m.json", "ph-mercator-4m.json",
+         "ph-mercator-5m.json", "ph-mercator-6m.json", "ph-mercator-8m.json", "ph-mercator-10m.json",
+         "ph-mercator-11m.json", "ph-mercator-13m.json", "ph-mercator-16m.json", "ph-mercator-18m.json",
+         "ph-mercator-22m.json", "ph-mercator-25m.json", "ph-mercator-29m.json", "ph-mercator-34m.json",
+         "ph-mercator-40m.json", "ph-mercator-47m.json", "ph-mercator-56m.json", "ph-mercator-66m.json",
+         "ph-mercator-78m.json", "ph-mercator-92m.json", "ph-mercator-110m.json", "ph-mercator-131m.json",
+         "ph-mercator-156m.json", "ph-mercator-186m.json", "ph-mercator-222m.json", "ph-mercator-266m.json",
+         "ph-mercator-318m.json", "ph-mercator-380m.json", "ph-mercator-454m.json", "ph-mercator-541m.json",
+         "ph-mercator-644m.json", "ph-mercator-763m.json", "ph-mercator-902m.json", "ph-mercator-1062m.json",
+         "ph-mercator-1245m.json", "ph-mercator-1452m.json", "ph-mercator-1684m.json", "ph-mercator-1942m.json",
+         "ph-mercator-2225m.json", "ph-mercator-2533m.json", "ph-mercator-2866m.json", "ph-mercator-3221m.json",
+         "ph-mercator-3597m.json", "ph-mercator-3992m.json", "ph-mercator-4405m.json", "ph-mercator-4833m.json",
+         "ph-mercator-5275m.json"]
+writes = ["ph-mercator-*m.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=ph-mercator-levels"]
+
+[products.ph-mercator-levels.tiles]
+build = ["python3", "scripts/fetch-mercator-bgc.py", "--tiles", "--only=ph-mercator-levels"]
+key = ["python3", "scripts/fetch-mercator-bgc.py", "--tile-key", "--only=ph-mercator-levels"]
+cache = "mercator-ph-levels-tiles"
+match = [
+  ["tiles-ph-mercator-*m", "ph-mercator-*m.json"],
+]
+
+[products.talk-mercator-levels]
+title = "Mercator Ocean total alkalinity at each level, daily means"
+step = "bgc-levels"
+roots = ["talk-mercator-0m.json", "talk-mercator-2m.json", "talk-mercator-3m.json", "talk-mercator-4m.json",
+         "talk-mercator-5m.json", "talk-mercator-6m.json", "talk-mercator-8m.json", "talk-mercator-10m.json",
+         "talk-mercator-11m.json", "talk-mercator-13m.json", "talk-mercator-16m.json", "talk-mercator-18m.json",
+         "talk-mercator-22m.json", "talk-mercator-25m.json", "talk-mercator-29m.json", "talk-mercator-34m.json",
+         "talk-mercator-40m.json", "talk-mercator-47m.json", "talk-mercator-56m.json", "talk-mercator-66m.json",
+         "talk-mercator-78m.json", "talk-mercator-92m.json", "talk-mercator-110m.json", "talk-mercator-131m.json",
+         "talk-mercator-156m.json", "talk-mercator-186m.json", "talk-mercator-222m.json", "talk-mercator-266m.json",
+         "talk-mercator-318m.json", "talk-mercator-380m.json", "talk-mercator-454m.json", "talk-mercator-541m.json",
+         "talk-mercator-644m.json", "talk-mercator-763m.json", "talk-mercator-902m.json", "talk-mercator-1062m.json",
+         "talk-mercator-1245m.json", "talk-mercator-1452m.json", "talk-mercator-1684m.json", "talk-mercator-1942m.json",
+         "talk-mercator-2225m.json", "talk-mercator-2533m.json", "talk-mercator-2866m.json", "talk-mercator-3221m.json",
+         "talk-mercator-3597m.json", "talk-mercator-3992m.json", "talk-mercator-4405m.json", "talk-mercator-4833m.json",
+         "talk-mercator-5275m.json"]
+writes = ["talk-mercator-*m.json"]
+max_age_hours = 30
+r2_only = true
+namespace = ["python3", "scripts/fetch-mercator-bgc.py", "--namespace", "--only=talk-mercator-levels"]
+
+[products.talk-mercator-levels.tiles]
+build = ["python3", "scripts/fetch-mercator-bgc.py", "--tiles", "--only=talk-mercator-levels"]
+key = ["python3", "scripts/fetch-mercator-bgc.py", "--tile-key", "--only=talk-mercator-levels"]
+cache = "mercator-talk-levels-tiles"
+match = [
+  ["tiles-talk-mercator-*m", "talk-mercator-*m.json"],
 ]

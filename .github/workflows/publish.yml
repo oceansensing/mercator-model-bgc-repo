@@ -119,6 +119,27 @@ jobs:
           key: ${{ steps.plan.outputs.cache-key-mercator-o2-levels-tiles }}
           restore-keys: ${{ steps.plan.outputs.cache-held-mercator-o2-levels-tiles }}
 
+      - name: Restore chl levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-chl-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-chl-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-chl-levels-tiles }}
+
+      - name: Restore ph levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-ph-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-ph-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-ph-levels-tiles }}
+
+      - name: Restore talk levels tiles
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-talk-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-talk-levels-tiles }}
+          restore-keys: ${{ steps.plan.outputs.cache-held-mercator-talk-levels-tiles }}
+
       - name: Fetch, validate, assemble
         id: run
         env:
@@ -153,6 +174,27 @@ jobs:
         with:
           path: ${{ steps.plan.outputs.cache-paths-mercator-o2-levels-tiles }}
           key: ${{ steps.plan.outputs.cache-key-mercator-o2-levels-tiles }}
+
+      - name: Save chl levels tiles
+        if: steps.run.outputs.built-mercator-chl-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-chl-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-chl-levels-tiles }}
+
+      - name: Save ph levels tiles
+        if: steps.run.outputs.built-mercator-ph-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-ph-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-ph-levels-tiles }}
+
+      - name: Save talk levels tiles
+        if: steps.run.outputs.built-mercator-talk-levels-tiles == 'true'
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: ${{ steps.plan.outputs.cache-paths-mercator-talk-levels-tiles }}
+          key: ${{ steps.plan.outputs.cache-key-mercator-talk-levels-tiles }}
 
       - name: Upload the site
         if: steps.run.outputs.deploy == 'true'
