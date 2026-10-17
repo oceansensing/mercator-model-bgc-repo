@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "talk-mercator",
+ "title": "Mercator Ocean surface total alkalinity",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-17T16:45:42Z",
+ "updated": "2026-10-17T04:52:32Z",
+ "hour": "2026-10-17T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-10-17T00:00:00Z"
+ ],
+ "files": {
+  "talk-mercator.json": {
+   "bytes": 6267758,
+   "sha256": "dd8d2e3f12aa74f5a7c68c7985941b4412a1bed0f7552f05cc1d182f52c240d2"
+  }
+ }
+}

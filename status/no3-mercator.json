@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "no3-mercator",
+ "title": "Mercator Ocean surface nitrate",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-17T16:45:42Z",
+ "updated": "2026-10-17T04:52:32Z",
+ "hour": "2026-10-17T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-10-17T00:00:00Z"
+ ],
+ "files": {
+  "no3-mercator.json": {
+   "bytes": 5699227,
+   "sha256": "559f1868f0d82242fdfd5a6efa28041bab09bff9bba285a3064098821a0e2175"
+  }
+ }
+}
