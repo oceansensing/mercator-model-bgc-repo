@@ -1,0 +1,44 @@
+{
+ "schema": 1,
+ "generated": "2026-10-24T10:45:29Z",
+ "mode": "full",
+ "fates": {
+  "chl-mercator": "fresh",
+  "ph-mercator": "fresh",
+  "pco2-mercator": "fresh",
+  "o2-mercator": "fresh",
+  "talk-mercator": "fresh",
+  "no3-mercator": "fresh",
+  "po4-mercator": "fresh",
+  "no3-mercator-levels": "fresh",
+  "po4-mercator-levels": "fresh",
+  "si-mercator-levels": "fresh",
+  "o2-mercator-levels": "fresh",
+  "chl-mercator-levels": "fresh",
+  "ph-mercator-levels": "fresh",
+  "talk-mercator-levels": "fresh"
+ },
+ "reasons": {},
+ "built": {},
+ "withheld": {
+  "no3-mercator-levels": {},
+  "po4-mercator-levels": {},
+  "si-mercator-levels": {},
+  "o2-mercator-levels": {},
+  "chl-mercator-levels": {},
+  "ph-mercator-levels": {},
+  "talk-mercator-levels": {}
+ },
+ "deploy": true,
+ "notes": [],
+ "behind": [],
+ "tile_keys": {
+  "no3-mercator-levels": "no3-mercator-levels20261024T000000Z",
+  "po4-mercator-levels": "po4-mercator-levels20261024T000000Z",
+  "si-mercator-levels": "si-mercator-levels20261024T000000Z",
+  "o2-mercator-levels": "o2-mercator-levels20261024T000000Z",
+  "chl-mercator-levels": "chl-mercator-levels20261024T000000Z",
+  "ph-mercator-levels": "ph-mercator-levels20261024T000000Z",
+  "talk-mercator-levels": "talk-mercator-levels20261024T000000Z"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "schema": 1,
+ "generated": "2026-10-24T10:43:25Z",
+ "mode": "full",
+ "products": {
+  "no3-mercator-levels": {
+   "tile_key": "no3-mercator-levels20261024T000000Z"
+  },
+  "po4-mercator-levels": {
+   "tile_key": "po4-mercator-levels20261024T000000Z"
+  },
+  "si-mercator-levels": {
+   "tile_key": "si-mercator-levels20261024T000000Z"
+  },
+  "o2-mercator-levels": {
+   "tile_key": "o2-mercator-levels20261024T000000Z"
+  },
+  "chl-mercator-levels": {
+   "tile_key": "chl-mercator-levels20261024T000000Z"
+  },
+  "ph-mercator-levels": {
+   "tile_key": "ph-mercator-levels20261024T000000Z"
+  },
+  "talk-mercator-levels": {
+   "tile_key": "talk-mercator-levels20261024T000000Z"
+  }
+ }
+}
