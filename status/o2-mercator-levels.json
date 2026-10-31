@@ -1,0 +1,411 @@
+{
+ "schema": 1,
+ "product": "o2-mercator-levels",
+ "title": "Mercator Ocean dissolved oxygen at each level, daily means",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T16:43:38Z",
+ "updated": "2026-10-31T04:49:05Z",
+ "hour": "2026-10-31T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-10-31T00:00:00Z"
+ ],
+ "files": {
+  "o2-mercator-0m.json": {
+   "bytes": 350708,
+   "sha256": "4302406842034e183f90e3a44b595c3190c8d0734463876afc9a196f91851a47"
+  },
+  "o2-mercator-1062m.json": {
+   "bytes": 334277,
+   "sha256": "26d42a6ffb7ad453f67d587a260920cc782d40cd3a6ab430afd086455f67f0b2"
+  },
+  "o2-mercator-10m.json": {
+   "bytes": 350683,
+   "sha256": "84fa73f7e9b83ac2e481f8ca9ca7a30b23d93fd9064ed1b478f8952196c939e1"
+  },
+  "o2-mercator-110m.json": {
+   "bytes": 346269,
+   "sha256": "156deb1656f51e27337f4e803709c0767febed10e1180743d6de2b954489e5d8"
+  },
+  "o2-mercator-11m.json": {
+   "bytes": 350673,
+   "sha256": "9e63ebeffe926a86d7978406433395107fb11cc6d9b31ff069a05d2da552d1ed"
+  },
+  "o2-mercator-1245m.json": {
+   "bytes": 334641,
+   "sha256": "bac67867d9c0fa209866c53752ac4ef847c22bdfd35751f6aff90ba39fa2a7d7"
+  },
+  "o2-mercator-131m.json": {
+   "bytes": 345434,
+   "sha256": "d209d6a3d8cecce107cf6dab145d468563d8947111d0b246bd0c3fbd17135e9d"
+  },
+  "o2-mercator-13m.json": {
+   "bytes": 350307,
+   "sha256": "8738f0cccdf524c4a8cf8725f602a04dacbd9ed874f895ab4bffe69e92aa27e3"
+  },
+  "o2-mercator-1452m.json": {
+   "bytes": 335543,
+   "sha256": "cc7ee5091be687fb4cc46521f8c05b52af4e8d30c71c4bd25199efbc5d5f06fd"
+  },
+  "o2-mercator-156m.json": {
+   "bytes": 344033,
+   "sha256": "1a3e8fac2b70092a8dfbb11b66187f5b656b256afee098e7f97bd363b0c1ca22"
+  },
+  "o2-mercator-1684m.json": {
+   "bytes": 336681,
+   "sha256": "c5e0bd2cde6f3120f31ea42f8252c519b93f3707c719297aba64483ebb9e85eb"
+  },
+  "o2-mercator-16m.json": {
+   "bytes": 350237,
+   "sha256": "fb5cda2cb54482c6cc42389156a017ed0f393b60bcbc5c77e44ad104a3f7ef3d"
+  },
+  "o2-mercator-186m.json": {
+   "bytes": 342781,
+   "sha256": "0872df378e1c53af538ef9086a341815f261495e362f8c8b0f6305e28180af1f"
+  },
+  "o2-mercator-18m.json": {
+   "bytes": 350145,
+   "sha256": "0b46a61fc72fa632e0e7442328ea1a6e85be9965b4fd37b178ac6e4739871318"
+  },
+  "o2-mercator-1942m.json": {
+   "bytes": 337537,
+   "sha256": "3863123eef3acc200d0b8226960877d7919deb38c484a20d686a7e43bd470347"
+  },
+  "o2-mercator-2225m.json": {
+   "bytes": 338365,
+   "sha256": "a933a69a0f44c53def51ba4e2322e196ea30eb0cf0bb1e2facbd698f4f3d5572"
+  },
+  "o2-mercator-222m.json": {
+   "bytes": 341610,
+   "sha256": "fdf50f0beda5002db3725ad191b3cf1b2463a968d52fccfab7e898c5bc52a5ff"
+  },
+  "o2-mercator-22m.json": {
+   "bytes": 350037,
+   "sha256": "20a20d037228d5dd3f21c93d732aef7618b43b4b7dc8e9c12e5d320df4086e65"
+  },
+  "o2-mercator-2533m.json": {
+   "bytes": 338957,
+   "sha256": "215f0440777b5de68d361a319ed7daf55e5415e3e3469aed44f6bbebce9f5461"
+  },
+  "o2-mercator-25m.json": {
+   "bytes": 349913,
+   "sha256": "e8955391ad88620db9ab1ce501b762dbadb1df969f18a8b3a9fc3e1d67dd3439"
+  },
+  "o2-mercator-266m.json": {
+   "bytes": 340497,
+   "sha256": "b44bbe5f4d3864c2e9c3d8fba46a7585d2d7db909bcfa914be7e782747ee60d5"
+  },
+  "o2-mercator-2866m.json": {
+   "bytes": 338507,
+   "sha256": "880774a712c460611d64573c1cded1249eb3ef37917ba00f1cab71bab479f26a"
+  },
+  "o2-mercator-29m.json": {
+   "bytes": 349792,
+   "sha256": "17249a21efacfe57768e6d4e525a67d5998a04db15604722d98e8c5137ec263c"
+  },
+  "o2-mercator-2m.json": {
+   "bytes": 350700,
+   "sha256": "789401b1ff1707a659607b74ceaa19df70dbefc59cf47c8d0e382c805deaea81"
+  },
+  "o2-mercator-318m.json": {
+   "bytes": 339306,
+   "sha256": "6266604e4ef4f871b07afb20e7c85c588fb0856c158146afc62e52c8e30937b2"
+  },
+  "o2-mercator-3221m.json": {
+   "bytes": 336287,
+   "sha256": "77afc7c50ea954fadbbdb14193d70db26d1096779efac83542768ee4e9feb5d9"
+  },
+  "o2-mercator-34m.json": {
+   "bytes": 349647,
+   "sha256": "200550696df4fa61730169c532744f88c508fac5775dee54a77a1130e13681db"
+  },
+  "o2-mercator-3597m.json": {
+   "bytes": 332859,
+   "sha256": "0c41940fd1188c6f7ca7e8488a200185c8a283c08a87b8b6bb116eaba9560fb5"
+  },
+  "o2-mercator-380m.json": {
+   "bytes": 338188,
+   "sha256": "64a49f9faddaea5fd25040e364d01896c4656b94c2ed691b5cc41a41ada8fbf7"
+  },
+  "o2-mercator-3992m.json": {
+   "bytes": 328106,
+   "sha256": "1d2085ac310b48d5bd4b8c6b5021796d593fa8710f08df42d9f3e80022919889"
+  },
+  "o2-mercator-3m.json": {
+   "bytes": 350698,
+   "sha256": "3c64235864b2bb1c16a0157341937e5fd1f61ab3e9267938bdbe610b86de6798"
+  },
+  "o2-mercator-40m.json": {
+   "bytes": 349442,
+   "sha256": "c6ba9c9b43a4d77d2fef96ecfe048c19dc490c0ee41d9c07c81dea649bef29f2"
+  },
+  "o2-mercator-4405m.json": {
+   "bytes": 322523,
+   "sha256": "e4a2f7448fcce54303f2a4a3093e46491f91bc177e0fa1547187acc82ae86f3d"
+  },
+  "o2-mercator-454m.json": {
+   "bytes": 337299,
+   "sha256": "a9158dcedeeffc559520b4af1121ae14a20ef6efa375367bbf2905c11f39d360"
+  },
+  "o2-mercator-47m.json": {
+   "bytes": 349197,
+   "sha256": "9b4309ce83eaf797fd6b56bce9d277c889c93609da135e4530c8d57a7e757e33"
+  },
+  "o2-mercator-4833m.json": {
+   "bytes": 317398,
+   "sha256": "6436115ba301c664328f33c01100159c3398424cb53331d19bb27458c09d1821"
+  },
+  "o2-mercator-4m.json": {
+   "bytes": 350698,
+   "sha256": "fa36d621c9b06ecca5cbb4ef4048ce2fcf4dc4042b2e32f9e5852d63ad26202a"
+  },
+  "o2-mercator-5275m.json": {
+   "bytes": 312321,
+   "sha256": "233a9fe05778ea15b6c24c42ff3e60d1c52e24e89e21a9e0dfac36cc6fd74490"
+  },
+  "o2-mercator-541m.json": {
+   "bytes": 336484,
+   "sha256": "d34f5c15495faf39abbf82d6d396d1e276428a551b9ea55b0a905a672db4aafd"
+  },
+  "o2-mercator-56m.json": {
+   "bytes": 348904,
+   "sha256": "ada8ee6a7e1019af793c716ef06b409c0d09a1f28c607ed3280859cc7dd658e9"
+  },
+  "o2-mercator-5m.json": {
+   "bytes": 350698,
+   "sha256": "950e60a6944b24445092eac1aa258a715925df0c00de4fc9b2b3aea24464bfa8"
+  },
+  "o2-mercator-644m.json": {
+   "bytes": 335489,
+   "sha256": "9756ae8ec596ae2ca7ab4eb82cd8d7c7f59a6d217be1ac267576aac7b965c9b1"
+  },
+  "o2-mercator-66m.json": {
+   "bytes": 348531,
+   "sha256": "99df0148128c93e205e5f003a1c868406d651bea7df676c5f85407d9c291d912"
+  },
+  "o2-mercator-6m.json": {
+   "bytes": 350698,
+   "sha256": "a0f2b9d707126655ff4842fee7c3bdbc7824c92fb2e912972e0b693f42ee3afd"
+  },
+  "o2-mercator-763m.json": {
+   "bytes": 334683,
+   "sha256": "8f11ed0576470aece7cfd33547a5e047fa326233c09232ae3f8b1a0196ed4c40"
+  },
+  "o2-mercator-78m.json": {
+   "bytes": 347990,
+   "sha256": "d9d41b94b094b8fa8469ae918459aa75ea6eb3bb15aa65a2744464c49cfa73f7"
+  },
+  "o2-mercator-8m.json": {
+   "bytes": 350688,
+   "sha256": "ef8501b801074b246b05cc7b1c5bf43cafef5f7b85612e850658834dd1cbaef3"
+  },
+  "o2-mercator-902m.json": {
+   "bytes": 334269,
+   "sha256": "6d0e2b426a91e6ad5df74a56e16681be14c70143d0f38ff272f992c29b1f7b7e"
+  },
+  "o2-mercator-92m.json": {
+   "bytes": 347103,
+   "sha256": "857ec11bda60a70c124565bfeeaba7c196590740cb1df93f3eae7b72d35bbd22"
+  }
+ },
+ "tiles": {
+  "tiles-o2-mercator-0m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-1062m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-10m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-110m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-11m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-1245m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-131m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-13m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-1452m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-156m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-1684m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-16m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-186m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-18m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-1942m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-2225m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-222m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-22m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-2533m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-25m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-266m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-2866m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-29m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-2m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-318m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-3221m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-34m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-3597m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-380m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-3992m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-3m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-40m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-4405m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-454m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-47m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-4833m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-4m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-5275m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-541m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-56m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-5m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-644m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-66m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-6m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-763m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-78m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-8m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-902m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-o2-mercator-92m": {
+   "state": "kept",
+   "reason": null
+  }
+ }
+}
