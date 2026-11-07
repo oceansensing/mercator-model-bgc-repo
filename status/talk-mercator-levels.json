@@ -1,0 +1,411 @@
+{
+ "schema": 1,
+ "product": "talk-mercator-levels",
+ "title": "Mercator Ocean total alkalinity at each level, daily means",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-07T16:42:28Z",
+ "updated": "2026-11-07T04:47:25Z",
+ "hour": "2026-11-07T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-07T00:00:00Z"
+ ],
+ "files": {
+  "talk-mercator-0m.json": {
+   "bytes": 393191,
+   "sha256": "ade2f15bf50daef631574c23039a5fe768864c8c0cfdab08aad88a2ade248bc2"
+  },
+  "talk-mercator-1062m.json": {
+   "bytes": 380189,
+   "sha256": "336fabb00618485e9653fa7da2e69299c624ec15c603a8a9db8f288e85285d5e"
+  },
+  "talk-mercator-10m.json": {
+   "bytes": 393149,
+   "sha256": "fdbf6fe1f72f9506179a4913352d9412420e95377c533d431c583a68a06212ae"
+  },
+  "talk-mercator-110m.json": {
+   "bytes": 387650,
+   "sha256": "e00f1ceb6c0afce7000a72f9fa7e672f7d76dd663fd2774cc996785fe268ee97"
+  },
+  "talk-mercator-11m.json": {
+   "bytes": 393130,
+   "sha256": "b4fb2eeafb0a5f94a5580565af48b75e47d392713e08a162aa41a31d843c6713"
+  },
+  "talk-mercator-1245m.json": {
+   "bytes": 379527,
+   "sha256": "76a3489c660731bd90a309e84f72664bc3ef31514593666c4d2603629e0beb5d"
+  },
+  "talk-mercator-131m.json": {
+   "bytes": 387146,
+   "sha256": "d3216ad641b7fbdbd26dad484a40d114c7134899a54ab6584c495e1d6cc60396"
+  },
+  "talk-mercator-13m.json": {
+   "bytes": 392409,
+   "sha256": "06aca115e294ee6df7b12be7f4798097ec38a9ca65129c24f048c5ede39e6389"
+  },
+  "talk-mercator-1452m.json": {
+   "bytes": 378645,
+   "sha256": "579ff748d17aedc3ca467975716eaf46931ba89742af1bb4f637ca0645c8ffba"
+  },
+  "talk-mercator-156m.json": {
+   "bytes": 386652,
+   "sha256": "07ea92d3233793359e33d316993cf7ace3b301d5db72c25d4296cd71a4339b6c"
+  },
+  "talk-mercator-1684m.json": {
+   "bytes": 377631,
+   "sha256": "0fb1dc998e7af79d4f59f20d54890985118d8edef4153e10f39e4134ac4c0438"
+  },
+  "talk-mercator-16m.json": {
+   "bytes": 392269,
+   "sha256": "851f77fe11a4a4af6dae0d8c481a4eec93ddf68d88c769882fe5471111955745"
+  },
+  "talk-mercator-186m.json": {
+   "bytes": 386070,
+   "sha256": "5bbf0fe784b9be89e269c64d96c01689efd238b4ff317ef5d0668b11791d5872"
+  },
+  "talk-mercator-18m.json": {
+   "bytes": 392086,
+   "sha256": "0123d3b44a4d4c25e14896e1841f79fa02392cb200446010810dadf8a1337698"
+  },
+  "talk-mercator-1942m.json": {
+   "bytes": 376235,
+   "sha256": "2ba9b5433e29627b4c5621d72613a09a896cc05627ca74e546055cdb0fdb64d4"
+  },
+  "talk-mercator-2225m.json": {
+   "bytes": 374527,
+   "sha256": "dec59570e7f11fdd7107b08d06ce0fc0da595e96ffaf882055b3bf5d936aaad5"
+  },
+  "talk-mercator-222m.json": {
+   "bytes": 385354,
+   "sha256": "c863e40e6b4220d9aef23470806c9bd6a74340b9cdc327ad89b36499319f0fcd"
+  },
+  "talk-mercator-22m.json": {
+   "bytes": 391870,
+   "sha256": "01a59d8ecde9d34ec8f4a837e972ba51650901379afa7be2e4424d06223ec1a2"
+  },
+  "talk-mercator-2533m.json": {
+   "bytes": 372303,
+   "sha256": "0b338d5d4a78001fade52a8ddbcdd61d561c29d8b0197895b897fd8f217b4f71"
+  },
+  "talk-mercator-25m.json": {
+   "bytes": 391621,
+   "sha256": "0c5dd999e8f95c9021d4d48792f9f61313365991059ff57e103d16323cbaf5b9"
+  },
+  "talk-mercator-266m.json": {
+   "bytes": 384788,
+   "sha256": "e9d94cec93465bb0d3bc62ea7e4578aced5186f9a228353d1b36d4925338af61"
+  },
+  "talk-mercator-2866m.json": {
+   "bytes": 369182,
+   "sha256": "dc6de15afdde255859c5a5df43e3d07f24aeda1763a23073c36af30296b71b0f"
+  },
+  "talk-mercator-29m.json": {
+   "bytes": 391379,
+   "sha256": "24dd7d92981b7219977dde90743a1de2c3adad82f23ce1cd53f0b7d6aa11d366"
+  },
+  "talk-mercator-2m.json": {
+   "bytes": 393175,
+   "sha256": "08e5e11a7ca064915248c7f1dfea39fcb734fe323dd6ec546e9a7a82da81f890"
+  },
+  "talk-mercator-318m.json": {
+   "bytes": 384220,
+   "sha256": "1fde4ff076b45a73960dec137148dcdb0571bff8538e2df5bdc099cbf82a9879"
+  },
+  "talk-mercator-3221m.json": {
+   "bytes": 364587,
+   "sha256": "79e5e60de93223152c349c5a56dff6057c3fb463c05a5893770ebfbad9f2f94b"
+  },
+  "talk-mercator-34m.json": {
+   "bytes": 391089,
+   "sha256": "5e6ddda3acb8a498a9af8cb26a42da3268517735e2275f0be8be92e2cea2d8b6"
+  },
+  "talk-mercator-3597m.json": {
+   "bytes": 357593,
+   "sha256": "b4fec5816ab40b5cc72f1092bbbac7275eed79cfcd60061de7a7f97804ea2be3"
+  },
+  "talk-mercator-380m.json": {
+   "bytes": 383600,
+   "sha256": "745be80e9cd982d89b8fa0b789c655d4c726fe52dad8dae765206e46dd634299"
+  },
+  "talk-mercator-3992m.json": {
+   "bytes": 348045,
+   "sha256": "56f20207c50f58b79fde6c60be9de4759f9875b1c698239ed83fe5106dc2efc5"
+  },
+  "talk-mercator-3m.json": {
+   "bytes": 393171,
+   "sha256": "bedadb6ca0752566f07ccda60242c853dc00af7910b089a43152a74b74eb2571"
+  },
+  "talk-mercator-40m.json": {
+   "bytes": 390685,
+   "sha256": "b73e13bfd8b984473a3405fedb52bdb5ad6acced60fec10e5aeeac3bcc2fee46"
+  },
+  "talk-mercator-4405m.json": {
+   "bytes": 336867,
+   "sha256": "9c4939bc3bce8ac55e4f88bfa5df48b2c7a9f67a7850c8de87e0daf210d16aa3"
+  },
+  "talk-mercator-454m.json": {
+   "bytes": 382944,
+   "sha256": "a03f68a1da29f7200a84ad48549896fe5f6eb8e664ecc7dd92150220952d4d4a"
+  },
+  "talk-mercator-47m.json": {
+   "bytes": 390219,
+   "sha256": "2e2262945769dc9a06789133ab7f76d3430e2bb2f253c9d7d1fe38540ee80287"
+  },
+  "talk-mercator-4833m.json": {
+   "bytes": 326605,
+   "sha256": "41cd49c5ff8608e9470f9033f8ab33dc7527a845df1289d91c9b103f09e2faca"
+  },
+  "talk-mercator-4m.json": {
+   "bytes": 393171,
+   "sha256": "9790eea82b6a1f5306791f6c43277876590607a43d7c8a10351aa8291f21fc78"
+  },
+  "talk-mercator-5275m.json": {
+   "bytes": 316431,
+   "sha256": "8e0e89094724c02c56bbd30baa5ae06ee202fb336e4249c14215c2501be7575a"
+  },
+  "talk-mercator-541m.json": {
+   "bytes": 382310,
+   "sha256": "7d02fd3ea715320ffb911f5f3fda8dde48055f1c8ba964bf73fcb20cb175fec6"
+  },
+  "talk-mercator-56m.json": {
+   "bytes": 389721,
+   "sha256": "d2c531204ac668a57f361337bcafda98f7378633c87150ebcb34ea4a41201503"
+  },
+  "talk-mercator-5m.json": {
+   "bytes": 393171,
+   "sha256": "7f8ca6078555e7e0ab26f8a99988f47ddbdfbb1c3532e5c1c5f73f943fe91d09"
+  },
+  "talk-mercator-644m.json": {
+   "bytes": 381732,
+   "sha256": "a611987d86e22a574176cc6f62635141cf5efb14ff1fa3ce133c912e2c37afbd"
+  },
+  "talk-mercator-66m.json": {
+   "bytes": 389257,
+   "sha256": "71232eee079ad2d2d6bd6d397e8342dda260bb911cfffbfe35fd3d4c31d42d60"
+  },
+  "talk-mercator-6m.json": {
+   "bytes": 393171,
+   "sha256": "5624498586b1748b98a2907e62f731de606602d9db11b4e58d9a9d6de558f919"
+  },
+  "talk-mercator-763m.json": {
+   "bytes": 381214,
+   "sha256": "33e959d8498ef13c48773ac8fcc32e474d6832b91ddf548025027f73eba852bc"
+  },
+  "talk-mercator-78m.json": {
+   "bytes": 388789,
+   "sha256": "f2419a6bf101fc9536aec5c139dc301b10273916b8a8f2f6a445c549edd6d242"
+  },
+  "talk-mercator-8m.json": {
+   "bytes": 393161,
+   "sha256": "1a9c9ad85dd3701a8e7ea6a756e1372c1220efd1c56b1b8af5c950aadb67fb11"
+  },
+  "talk-mercator-902m.json": {
+   "bytes": 380718,
+   "sha256": "66354927072f43e62a3646f407d53aa913e0d3b39f98f558aeee91600198dbcf"
+  },
+  "talk-mercator-92m.json": {
+   "bytes": 388227,
+   "sha256": "1720faee89fe5b370dd11a2241f5ebf6df58ccaa1d049d7021e1a0bb44e76ecc"
+  }
+ },
+ "tiles": {
+  "tiles-talk-mercator-0m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-1062m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-10m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-110m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-11m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-1245m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-131m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-13m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-1452m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-156m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-1684m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-16m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-186m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-18m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-1942m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-2225m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-222m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-22m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-2533m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-25m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-266m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-2866m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-29m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-2m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-318m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-3221m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-34m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-3597m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-380m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-3992m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-3m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-40m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-4405m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-454m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-47m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-4833m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-4m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-5275m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-541m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-56m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-5m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-644m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-66m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-6m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-763m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-78m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-8m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-902m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-talk-mercator-92m": {
+   "state": "kept",
+   "reason": null
+  }
+ }
+}
