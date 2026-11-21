@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "pco2-mercator",
+ "title": "Mercator Ocean surface pCO2",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T10:43:06Z",
+ "updated": "2026-11-21T04:48:12Z",
+ "hour": "2026-11-21T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-21T00:00:00Z"
+ ],
+ "files": {
+  "pco2-mercator.json": {
+   "bytes": 5585914,
+   "sha256": "469090e0217f80aba6d89ee114cdd44c89425501c1b0a31a7cf8024356357b05"
+  }
+ }
+}

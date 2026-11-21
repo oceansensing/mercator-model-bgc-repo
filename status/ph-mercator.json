@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "ph-mercator",
+ "title": "Mercator Ocean surface pH (total scale)",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T10:43:06Z",
+ "updated": "2026-11-21T04:48:12Z",
+ "hour": "2026-11-21T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-21T00:00:00Z"
+ ],
+ "files": {
+  "ph-mercator.json": {
+   "bytes": 5514318,
+   "sha256": "ade0baa165fbdee9cb8e6a6c7b5b22cf35648a41ab137ee771da77510563548a"
+  }
+ }
+}

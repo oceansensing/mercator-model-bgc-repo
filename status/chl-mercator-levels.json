@@ -1,0 +1,411 @@
+{
+ "schema": 1,
+ "product": "chl-mercator-levels",
+ "title": "Mercator Ocean chlorophyll-a at each level, daily means",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T10:43:06Z",
+ "updated": "2026-11-21T04:48:12Z",
+ "hour": "2026-11-21T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-21T00:00:00Z"
+ ],
+ "files": {
+  "chl-mercator-0m.json": {
+   "bytes": 388569,
+   "sha256": "aea25eb50c6e57c3be2034e38651b22434fc093101bdbb2e62ff29d97a3e0481"
+  },
+  "chl-mercator-1062m.json": {
+   "bytes": 376411,
+   "sha256": "39263998f5196d6b24ebaee43c84c7c8d85796fc429734a0358bf94ea727c450"
+  },
+  "chl-mercator-10m.json": {
+   "bytes": 388538,
+   "sha256": "f72984d070d6f481612406b487f665126d78a1356e1dfe41444e9ef765ebeb4e"
+  },
+  "chl-mercator-110m.json": {
+   "bytes": 383247,
+   "sha256": "a9e55222476f1de73b320fdf3902797693d9f17de6ff1503c0a6f22feab52d80"
+  },
+  "chl-mercator-11m.json": {
+   "bytes": 388498,
+   "sha256": "81963d1d05c35084b0d655d0f25f226a616c7279c850b7390f9f06391aa2ecee"
+  },
+  "chl-mercator-1245m.json": {
+   "bytes": 376140,
+   "sha256": "c57defee6c898c2938d6a4e90ca1c6a89a40ae3442219823c56aeadef9e65024"
+  },
+  "chl-mercator-131m.json": {
+   "bytes": 382870,
+   "sha256": "37e87df48fba3599f39b5cefa78dac91e85953a8745f25dde0f5758b588d99cf"
+  },
+  "chl-mercator-13m.json": {
+   "bytes": 387818,
+   "sha256": "d60a64aa0f7ea788e24eb57e3e324247763c5066fb75d533654cb22bdfc2f5cd"
+  },
+  "chl-mercator-1452m.json": {
+   "bytes": 374703,
+   "sha256": "0ba2b094781d5a43c555928079848aaaf91349a0db527449d6d80bd3fbf65da0"
+  },
+  "chl-mercator-156m.json": {
+   "bytes": 382295,
+   "sha256": "69fa5083f788916ef5e9e47c44638562b5d936d5714138d4c8e75c2ffe6f151e"
+  },
+  "chl-mercator-1684m.json": {
+   "bytes": 373310,
+   "sha256": "432b27c0de2c726180f06637eb7b3c1b4bce47fcf40c791ad1d4cf026942c311"
+  },
+  "chl-mercator-16m.json": {
+   "bytes": 387588,
+   "sha256": "09ebc9286474fccc0f2db2caa73bade0c55f47fe72398174d1dd500a16e7b683"
+  },
+  "chl-mercator-186m.json": {
+   "bytes": 381684,
+   "sha256": "aadcfd539b69d1b8b620810654546beb42ff7661e832116a3a630d48bb539c1f"
+  },
+  "chl-mercator-18m.json": {
+   "bytes": 387386,
+   "sha256": "1356d9682e02b5aff5afa48eb8de647cb0de5b32a3b11b2073351ec8402552a7"
+  },
+  "chl-mercator-1942m.json": {
+   "bytes": 372967,
+   "sha256": "e3c57cb37f67c752a9933efbe040667125bab0d79e8839e346c74bb5cd1b3385"
+  },
+  "chl-mercator-2225m.json": {
+   "bytes": 372266,
+   "sha256": "dca3eb491b29d61b69f71354932bc7759703e34e434b02292f791c4d9c02b0db"
+  },
+  "chl-mercator-222m.json": {
+   "bytes": 381101,
+   "sha256": "6833e7f93f8d565e1e72a89711b53d8badc0c841998e0ae96a7a1c35d3c955ea"
+  },
+  "chl-mercator-22m.json": {
+   "bytes": 387332,
+   "sha256": "e1ced8cdda55862252b34dbe5d5c879b653ba0a6748d526a16b143e62ea28796"
+  },
+  "chl-mercator-2533m.json": {
+   "bytes": 370509,
+   "sha256": "2327c683001ae5170d09708fa5836b998ef21017161947e9f84d3ff2ca4808af"
+  },
+  "chl-mercator-25m.json": {
+   "bytes": 386958,
+   "sha256": "0fb08b1bc8f75f62e92b0d05f813f45f65af823843f6858c6870eb24ef75db06"
+  },
+  "chl-mercator-266m.json": {
+   "bytes": 380660,
+   "sha256": "a81ff34c67d8eddc2c51c7ff5f29e60a05ca7f2e80cf0381b585237492ad7205"
+  },
+  "chl-mercator-2866m.json": {
+   "bytes": 367808,
+   "sha256": "01ce919f31bd170c4387e2c3351b99e8c6e973f6131c787c7a4aab254c675b11"
+  },
+  "chl-mercator-29m.json": {
+   "bytes": 386776,
+   "sha256": "814e990234a175b8bd35d7f5fcfceabda052cc5a7b76b93a806cf66f10493639"
+  },
+  "chl-mercator-2m.json": {
+   "bytes": 388545,
+   "sha256": "deb563d4e22ee9e4809ad4609f45d42d5b11737c8bc08778fcfbbfed7c5b8954"
+  },
+  "chl-mercator-318m.json": {
+   "bytes": 380057,
+   "sha256": "0160d8c50b5614c13e7aebf5f7799a9d20ce87f22be9fbd9bd281c46336c057c"
+  },
+  "chl-mercator-3221m.json": {
+   "bytes": 363362,
+   "sha256": "b3531179e81cc904f9d1136b213843677ded991d655d3d96dcd847ebba5d3d07"
+  },
+  "chl-mercator-34m.json": {
+   "bytes": 386443,
+   "sha256": "77ccfb15cf3a101b910c26b1ddd6b2e04b132f549e91b668e6085fc8f9118403"
+  },
+  "chl-mercator-3597m.json": {
+   "bytes": 356499,
+   "sha256": "732cea8485a858ac4b9b7a96149638d6b276896c1ba297d72d90315acc4a9751"
+  },
+  "chl-mercator-380m.json": {
+   "bytes": 379675,
+   "sha256": "77cfb03ed0d52cd0a1223126bc7bdff5da43c3414491aee34d854af499566a9d"
+  },
+  "chl-mercator-3992m.json": {
+   "bytes": 347166,
+   "sha256": "5567ecbd63d2d3ac7284b6730ec9e6cd103d6348a7e5acf387daf88e98a5fe48"
+  },
+  "chl-mercator-3m.json": {
+   "bytes": 388615,
+   "sha256": "37e4945ce8f86e20ef61823c25ff58fe09dc6882915e6d328317c62ec9ade180"
+  },
+  "chl-mercator-40m.json": {
+   "bytes": 386100,
+   "sha256": "bcdcfe25a63fd2f99c6439e1b3c73727e982b26cebe9621d00bbcbd1ffd40b87"
+  },
+  "chl-mercator-4405m.json": {
+   "bytes": 336284,
+   "sha256": "3e3709c0c9e546bb91aee6480dd5e55e8be695d251de0db60dbe0a6c3d0b70fd"
+  },
+  "chl-mercator-454m.json": {
+   "bytes": 379419,
+   "sha256": "750c178d0a982709ea8df343f23d1d6d25cf25b69c7034764025e465f6c79e49"
+  },
+  "chl-mercator-47m.json": {
+   "bytes": 385642,
+   "sha256": "bb05d74014767683ed260e91231b192e96a9156bde54c3c79cc80ac2dd7283da"
+  },
+  "chl-mercator-4833m.json": {
+   "bytes": 326246,
+   "sha256": "4f935ab612d3e5aac27d3d86b22b2ac8ed00a2244454267af3a6cb7c00f30445"
+  },
+  "chl-mercator-4m.json": {
+   "bytes": 388587,
+   "sha256": "1ed6a755d09a434e03904a055ec258b1aa6770b7da03ee47a261fb10969ad27d"
+  },
+  "chl-mercator-5275m.json": {
+   "bytes": 316344,
+   "sha256": "50f98ca2439ac9d295331133e3e032c502b4f8c7f6dbaa3d64e5439f4b88a1c7"
+  },
+  "chl-mercator-541m.json": {
+   "bytes": 378654,
+   "sha256": "3bf0695c13b239b53e89e9fb5de16d7af49dee710e087a4bffab0b34f5be4440"
+  },
+  "chl-mercator-56m.json": {
+   "bytes": 385239,
+   "sha256": "7fec6697ec838b71cad9abb47b26f91bc0dec2f8b95d2a402dcdf919df172739"
+  },
+  "chl-mercator-5m.json": {
+   "bytes": 388572,
+   "sha256": "45c3bf6d4426a82b465a053d809f03862e0a629ee932e29f8721822ed17e4bfc"
+  },
+  "chl-mercator-644m.json": {
+   "bytes": 377856,
+   "sha256": "f88859d7c2f977ba36fdd2076eced2e6d8d4a354dedd3e16259a91dffc42c493"
+  },
+  "chl-mercator-66m.json": {
+   "bytes": 384867,
+   "sha256": "f7d326164a6a9080e4f2120ec3a697ff9934e081e16096d2d90238bc38d5795d"
+  },
+  "chl-mercator-6m.json": {
+   "bytes": 388548,
+   "sha256": "854aca4404e92ff58118374ca8e2072c9091b35c3c6244fce5af0c51ffd89de5"
+  },
+  "chl-mercator-763m.json": {
+   "bytes": 376778,
+   "sha256": "c411648bd4eb7db21fe5fd92434297227f1c88075b0134fdb4f08bd1a4c4db16"
+  },
+  "chl-mercator-78m.json": {
+   "bytes": 384218,
+   "sha256": "23a9d1912810305c7a0fd135537b0601039ed69a1ee65ac647730a3f9dc60810"
+  },
+  "chl-mercator-8m.json": {
+   "bytes": 388564,
+   "sha256": "f4206790ced53131320abf19f3f0e1dc6e3b6f554ef3ad6b6a8d2dd84fb027d5"
+  },
+  "chl-mercator-902m.json": {
+   "bytes": 376718,
+   "sha256": "d509a29451bfc21bcd05c83655e6ed0a5dd7fe7e506df1b4de97fe318498234f"
+  },
+  "chl-mercator-92m.json": {
+   "bytes": 383832,
+   "sha256": "c49ee35978c0ce1a9c55fbef0892782eaaeb3751283009ceeb0d0c2c65701e82"
+  }
+ },
+ "tiles": {
+  "tiles-chl-mercator-0m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-1062m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-10m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-110m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-11m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-1245m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-131m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-13m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-1452m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-156m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-1684m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-16m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-186m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-18m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-1942m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-2225m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-222m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-22m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-2533m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-25m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-266m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-2866m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-29m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-2m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-318m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-3221m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-34m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-3597m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-380m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-3992m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-3m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-40m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-4405m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-454m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-47m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-4833m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-4m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-5275m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-541m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-56m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-5m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-644m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-66m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-6m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-763m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-78m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-8m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-902m": {
+   "state": "kept",
+   "reason": null
+  },
+  "tiles-chl-mercator-92m": {
+   "state": "kept",
+   "reason": null
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "po4-mercator",
+ "title": "Mercator Ocean surface phosphate",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T10:43:06Z",
+ "updated": "2026-11-21T04:48:12Z",
+ "hour": "2026-11-21T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-21T00:00:00Z"
+ ],
+ "files": {
+  "po4-mercator.json": {
+   "bytes": 6192898,
+   "sha256": "cccf70e938a7483ead0d0a9fe45f1d93285fdd6d4f9403e5e274331560262821"
+  }
+ }
+}
