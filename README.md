@@ -14,8 +14,9 @@ analysis and forecast, `GLOBAL_ANALYSISFORECAST_BGC_001_028`: chlorophyll-a,
 pH, surface pCO2, dissolved oxygen, total alkalinity, nitrate and phosphate.
 
 These products are published **operationally but not drawn on the website's
-map** — the owner's call, 2026-09-27. The map's status line still reports
-them when they fall behind, which is how their health stays visible.
+map** — the owner's call, 2026-09-27. The map's status
+line reports those Pages carries when they fall behind; those R2 alone carries
+are in the status on R2 and on the `published` branch, not Pages'.
 
 ## The products
 
@@ -84,9 +85,9 @@ workflow (`.github/workflows/publish.yml`), and nothing else executable.
 to Cloudflare R2 from one build. Sibling repositories of the same model:
 `mercator-model-currents-repo` and `mercator-model-fields-repo`.
 
-**Which document gets what, and what "update docs" means across all
-twenty repositories, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in all twenty, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`** —
+the same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 
