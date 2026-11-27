@@ -1,101 +1,14 @@
 # mercator-model-bgc-repo
 
-The Mercator **biogeochemistry** — a data repository of the oceansensing ocean map system: its own
-Pages site, its own schedule, its own gigabyte, holding no code of its own.
+Copernicus Marine's global biogeochemistry analysis and forecast, as gridded
+data at the model's 0.25° for the oceansensing.org ocean map: chlorophyll-a,
+pH, surface pCO2, dissolved oxygen, total alkalinity, nitrate and phosphate at
+the surface, and nitrate, phosphate, silicate, dissolved oxygen,
+chlorophyll-a, pH and total alkalinity at each of the model's levels with
+water in it — the daily mean for the day at or before now.
 
-**Live since 2026-09-27** — published to Pages and R2, not drawn on the
-website's map. `PLAN.md` is the founding plan;
-`CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
+Updated four times a day.
 
-## What it publishes
+## Sources and credits
 
-Seven **surface** fields from Copernicus Marine's global biogeochemistry
-analysis and forecast, `GLOBAL_ANALYSISFORECAST_BGC_001_028`: chlorophyll-a,
-pH, surface pCO2, dissolved oxygen, total alkalinity, nitrate and phosphate.
-
-These products are published **operationally but not drawn on the website's
-map** — the owner's call, 2026-09-27. The map's status
-line reports those Pages carries when they fall behind; those R2 alone carries
-are in the status on R2 and on the `published` branch, not Pages'.
-
-## The products
-
-| root | quantity | published unit | places | size |
-| --- | --- | --- | --- | --- |
-| `chl-mercator.json` | chlorophyll-a | mg m-3 | 4 | 6.2 MB |
-| `ph-mercator.json` | pH, total scale | 1 | 3 | 5.5 MB |
-| `pco2-mercator.json` | surface pCO2 | uatm (from Pa) | 1 | 5.6 MB |
-| `o2-mercator.json` | dissolved oxygen | mmol m-3 | 1 | 5.6 MB |
-| `talk-mercator.json` | total alkalinity | mmol m-3 (from mol m-3) | 1 | 6.3 MB |
-| `no3-mercator.json` | nitrate | mmol m-3 | 3 | 5.7 MB |
-| `po4-mercator.json` | phosphate | mmol m-3 | 4 | 6.2 MB |
-
-Each is one global grid at the model's own 0.25 degree (1,440 x 681, north
-row first, longitude 0..360), the daily mean for the day at or before now,
-at the first depth level (0.494 m). No tiles. Sizes measured 2026-09-27;
-the published tree is about 39 MB. The fetcher is the site's
-`scripts/fetch-mercator-bgc.py`.
-
-## Published to R2 alone (since 2026-10-10)
-
-Declared `r2_only` in `pipeline/products.toml`: the same run builds these,
-they are left out of this repository's Pages site and its status, and the R2
-job publishes them beside the rest (the site pipeline's D13, its note of
-2026-10-09). Their roots stay on the `published` branch, as every product's do.
-
-| roots | quantity | places | a day |
-| --- | --- | --- | --- |
-| `no3-mercator-<depth>m.json` | nitrate at each of the 49 levels with water, 0.494 to 5274.784 m — the physics' own depths, checked each run — one root a level named for its depth to the meter (`-0m` … `-5275m`) | 3 | 284 MB |
-| `po4-mercator-<depth>m.json` | phosphate at the same levels | 4 | 297 MB |
-| `si-mercator-<depth>m.json` | silicate at the same levels | 2 | 255 MB |
-| `o2-mercator-<depth>m.json` | dissolved oxygen at the same levels | 1 | 268 MB |
-| `chl-mercator-<depth>m.json` | chlorophyll-a at the same levels, mg m-3 (since 2026-10-16) | 4 | 298 MB |
-| `ph-mercator-<depth>m.json` | pH (total scale) at the same levels (since 2026-10-16) | 3 | 267 MB |
-| `talk-mercator-<depth>m.json` | total alkalinity at the same levels (since 2026-10-16) | 1 | 301 MB |
-
-Each root is a 1 degree overview (every fourth cell) pointing at its tiles
-at the model's own 0.25 degree in 20 degree boxes, an all-land box left out;
-mmol m-3 but chlorophyll's mg m-3 and pH's none, the daily mean for the day
-at or before now. One level is one read (one chunk), so the four took about
-two minutes (measured 2026-10-10, step `bgc-levels`); the three of 2026-10-16
-about 27 s each (measured that day, off the runners). **The product's silicate stops at 150 mmol m-3**: in the deep
-North Pacific 18% of the cells at 2533 m read exactly 150.00 (measured
-2026-10-10's 10-11), where the ocean holds more.
-
-## Where the data comes from
-
-**Source, read 2026-09-26/27** (`copernicusmarine describe`, toolbox 2.4.1,
-no login): five daily datasets, `cmems_mod_glo_bgc-{pft,car,co2,bio,nut}_anfc_0.25deg_P1D-m`,
-dataset version 202311. A regular **0.25°** global grid, latitude −80 to 90
-(681 rows) by 1,440 columns; 50 depth levels whose first is 0.494 m; a daily
-time axis running about ten days past today, updated around 03:30 UTC on the
-one day read. `spco2` is two-dimensional and in pascals. The ARCO geo-series
-chunks are one time, one depth, 681 × 1,440 — one frame is one chunk, the
-shape the Mercator fetcher's chunk guard accepts. Access is the sibling
-repositories' own: the `copernicusmarine` toolbox and the organization's
-Copernicus Marine credentials.
-
-## How it runs
-
-The orchestrator (the site's private `pipeline/`), the fetchers and the
-published-file contract all come from `oceansensing.github.io`, checked out at
-run time. This repository carries `pipeline/products.toml` and its publish
-workflow (`.github/workflows/publish.yml`), and nothing else executable.
-**Scheduled since 2026-09-27** (`37 4,10,16,22 * * *`), after its first dispatched run published. Each run publishes to GitHub Pages and
-to Cloudflare R2 from one build. Sibling repositories of the same model:
-`mercator-model-currents-repo` and `mercator-model-fields-repo`.
-
-**Which document gets what, and what "update docs" means across every
-repository of this project, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in each, held equal by the site's `check:docs`.
-
-## Structure
-
-```
-README.md       what this is
-CLAUDE.md       what must not be got wrong, and the shared doc doctrine
-PLAN.md         the founding plan and running record
-DECISIONS.md    dated one-way decisions, D1 onward
-pipeline/       products.toml, the declaration the orchestrator reads
-.github/        the publish workflow
-```
+Generated using E.U. Copernicus Marine Service Information: Mercator Ocean International's Global Ocean Biogeochemistry Analysis and Forecast, <https://doi.org/10.48670/moi-00015>. Its terms: the [Copernicus Marine Service Commitments and Licence](https://marine.copernicus.eu/user-corner/service-commitments-and-licence).
