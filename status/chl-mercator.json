@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "chl-mercator",
+ "title": "Mercator Ocean surface chlorophyll-a",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T10:43:19Z",
+ "updated": "2026-11-28T04:46:34Z",
+ "hour": "2026-11-28T00:00:00Z",
+ "modelRun": null,
+ "source": "Mercator Ocean / Copernicus Marine",
+ "hours": [
+  "2026-11-28T00:00:00Z"
+ ],
+ "files": {
+  "chl-mercator.json": {
+   "bytes": 6192903,
+   "sha256": "e4a6dcf81a8600c1db3ef137bd1d1536071d0abbf5a726819b8e393f2043b9bb"
+  }
+ }
+}
